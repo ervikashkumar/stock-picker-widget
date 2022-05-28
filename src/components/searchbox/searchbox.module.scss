@@ -1,0 +1,62 @@
+.searchContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+  margin-top: 40px;
+
+  button {
+    padding: 8px 16px;
+    border-radius: 16px;
+    background: crimson;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 600px) {
+    label {
+      margin-bottom: 16px;
+    }
+  }
+
+  .autocomplete {
+    position: relative;
+
+    input {
+      min-width: 400px;
+      height: 40px;
+      padding: 8px 16px;
+      border-radius: 16px;
+    }
+    @media screen and (max-width: 600px) {
+      input {
+        min-width: unset;
+      }
+    }
+
+    ul {
+      position: absolute;
+      left: 0;
+      top: 40px;
+      background-color: white;
+      border: 1px solid black;
+      box-shadow: 0 8px 24px rgb(149 157 165 / 20%);
+      border-radius: 8px;
+      max-height: 200px;
+      overflow-y: scroll;
+      width: 100%;
+      li {
+        padding: 12px 16px;
+        &:hover {
+          background-color: cadetblue;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .suggestionsList {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

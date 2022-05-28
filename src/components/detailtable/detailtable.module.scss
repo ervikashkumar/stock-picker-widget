@@ -1,0 +1,10 @@
+.detailBox {
+  padding: 20px 32px;
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: justify;
+    padding: 16px 0;
+  }
+}
