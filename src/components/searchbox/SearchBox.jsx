@@ -60,7 +60,7 @@ const SearchBox = (props) => {
 
   const searchOnKeyDown = (ev) => {
     if (ev.key === "Enter") {
-      selectStock(keyword);
+      getStockDetails(keyword);
     }
   };
   const getStockDetails = useCallback(
